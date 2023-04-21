@@ -1,0 +1,62 @@
+
+.container{
+    background-color: silver;
+    margin: 0px auto;
+
+    display: flex;
+
+    width: 50%;
+
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container > div {
+    width: 95%;
+    margin: 10px auto;
+}
+
+.title {
+    font-family:Georgia, 'Times New Roman', Times, sans;
+    font-size: 20pt;
+
+    display: flex;
+    justify-content: center;
+}
+
+.images {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#first {
+    background-color: lightblue;
+}
+
+#second {
+    background-color: pink;
+}
+
+#third {
+    background-color: white;
+}
+
+img {
+    height: 200px;
+    margin: 10px auto;
+    border: 2px solid;
+}
+
+.source {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 18pt;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

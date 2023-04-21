@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Card</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="card.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="nav">
+        <h1 class="nav-title">Profile</h1>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#" class="active">My Profile</a></li>
+            <li><a href="#">Find Connections</a></li>
+            <li><button class="btn">Sign Out</button></li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="main-info">
+            <div class="card">
+                <div class="card-bg"/>
+                <div class="card-content">
+                    <img class="card-image" src="icons/user-circle.png" alt="profile image">
+                    <h2 class="card-name">Jane Doe</h2>
+                    <div class="card-location">
+                        <img src="icons/map-marker.png" alt="location marker">
+                        <p>Seattle</p>
+                    </div>
+                    <p class="card-text">Developer | Engineer | Problem Solver</p>
+                    <p class="card-text">Master of shadows and the Internet!</p>
+                    <div class="card-edit">
+                        <img src="icons/gear.png" alt="edit icon">
+                        <a href="#" onclick="ChangeName()">edit profile</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="education">
+            <div class="education-header">
+                <h3>Education</h3>
+            </div>
+            <div class="education-text">
+                <p>Coding Dojo - Full Stack Bootcamp</p>
+                <p>Dec 2019 - Mar 2020</p>
+                <p>Python, Mern, C#</p>
+            </div>
+        </div>
+        
+    </div>
+    <div class="main-connections">
+        <div class="connection-box">
+            <div class="connection-header">
+                <p>2</p><h3>Connection Requests</h3>
+            </div>
+            <div class="connection-content">
+                <div class="connection-entry" id="request-todd">
+                    <img class="connection-mugshot" src="icons/user-circle.png" alt="profile image">
+                    <p>Todd E</p>
+                    <div class="connection-checkboxes">
+                        <img src="icons/accept-circle.png" alt="accept" onclick="RemoveRequest(`todd`)">
+                        <img src="icons/close-circle.png" alt="decline" onclick="RemoveRequest(`todd`)">
+                    </div>
+                </div>
+                <div class="connection-entry" id="request-phil">
+                    <img class="connection-mugshot" src="icons/user-circle.png" alt="profile image">
+                    <p>Phil K</p>
+                    <div class="connection-checkboxes">
+                        <img src="icons/accept-circle.png" alt="accept" onclick="RemoveRequest(`phil`)">
+                        <img src="icons/close-circle.png" alt="decline" onclick="RemoveRequest(`phil`)">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="connection-box">
+            <div class="connection-header">
+                <p>500+</p><h3>Your Connections</h3>
+            </div>
+            <div class="connection-content">
+                <div class="connection-entry">
+                    <img class="connection-mugshot" src="icons/user-circle.png" alt="profile image">
+                    <p>Adrien D</p>
+                </div>
+                <div class="connection-entry">
+                    <img class="connection-mugshot" src="icons/user-circle.png" alt="profile image">
+                    <p>Anne J</p>
+                </div>
+                <div class="connection-entry">
+                    <img class="connection-mugshot" src="icons/user-circle.png" alt="profile image">
+                    <p>Alayne T</p>
+                </div><div class="connection-entry">
+                    <img class="connection-mugshot" src="icons/user-circle.png" alt="profile image">
+                    <p>Arry Y</p>
+                </div>
+            </div>
+            <div class="connection-content">
+                <div class="connection-entry">
+                    <a href="#">View More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

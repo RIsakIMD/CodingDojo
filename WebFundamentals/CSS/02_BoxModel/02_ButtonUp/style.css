@@ -1,0 +1,31 @@
+
+#search {
+    background-color: aquamarine;
+    color: darkturquoise;
+
+    border: 1px solid;
+    border-color: darkturquoise;
+    border-radius: 25%;
+
+    width: 100px;
+    height: 30px;
+}
+
+#plus {
+    background-color: teal;
+    color: white;
+
+    border: 0;
+    border-radius: 50%;
+
+    width: 25px;
+    height: 25px;
+}
+
+#account {
+    background-color: blue;
+    color: white;
+
+    border: 3px solid;
+    border-color: black;
+}

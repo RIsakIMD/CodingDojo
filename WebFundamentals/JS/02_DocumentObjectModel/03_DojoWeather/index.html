@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Likes</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="navbar">
+        <div id="navbar-content">
+            <h1>DojoWeather</h1>
+            <p onclick="DisplayAlert()">Brubank</p>
+            <p onclick="DisplayAlert()">Chicago</p>
+            <p onclick="DisplayAlert()">Dallas</p>
+        </div>
+    </div>
+    <div id="main">
+        <div id="main-header">
+            <h2>San Jose</h2>
+            <div id="main-units">
+                <label for="units">show temperature in</label>
+                <select name="units" id="units" oninput="TemperatureChanged(this)">
+                  <option value="c">°C</option>
+                  <option value="f">°F</option>
+                </select> 
+            </div>
+        </div>
+        <div id="main-display">
+            <div class="day">
+                <h3>Today</h3>
+                <img src="assets/some_rain.png" alt="weather icon">
+                <p>some rain</p>
+                <div class="day-range">
+                    <p class="high">24</p>
+                    <p class="low">18</p>
+                </div>
+            </div>
+            <div class="day">
+                <h3>Tomorrow</h3>
+                <img src="assets/some_sun.png" alt="weather icon">
+                <p>some sun</p>
+                <div class="day-range">
+                    <p class="high">27</p>
+                    <p class="low">19</p>
+                </div>
+            </div>
+            <div class="day">
+                <h3>Friday</h3>
+                <img src="assets/some_clouds.png" alt="weather icon">
+                <p>some clouds</p>
+                <div class="day-range">
+                    <p class="high">21</p>
+                    <p class="low">16</p>
+                </div>
+            </div>
+            <div class="day">
+                <h3>Saturday</h3>
+                <img src="assets/some_sun.png" alt="weather icon">
+                <p>some sun</p>
+                <div class="day-range">
+                    <p class="high">26</p>
+                    <p class="low">21</p>
+                </div>
+            </div>
+        </div>
+        <div id="main-cookies">
+            <img src="assets/cookie.png" alt="cookies icon">
+            <p>
+                Stop! Cookie time <br>
+                We use cookies (sadly not the edible ones) to personalize content and ads,
+                to provide social media features and to analyse our traffic.
+            </p>
+            <button id="cookies-accept" onclick="AcceptCookies()">I Accept</button>
+        </div>
+    </div>
+</body>
+</html>

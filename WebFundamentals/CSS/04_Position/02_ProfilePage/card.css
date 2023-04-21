@@ -1,0 +1,47 @@
+
+.card {
+    background-color: lightseagreen;
+
+    height: 300px;
+
+    display: flex;
+    align-items: flex-end;
+
+    border: 2px solid;
+    border-color: lightseagreen;
+}
+
+.card-bg {
+    background-color: white;
+
+    width: 100%;
+    height: 75%;
+}
+
+.card-content {
+    margin-left: 25px;
+    
+}
+
+.card-name, .card-location, .card-text, .card-edit {
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.card-image {
+    width: 75px;
+    margin-top: -5%;
+}
+
+.card-location {
+    display: flex;
+    align-items: center;
+}
+
+.card-location img {
+    height: 15px;
+}
+
+.card-edit img {
+    height: 15px;
+}
