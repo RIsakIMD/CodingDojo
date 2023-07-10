@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        .box {
+            background-color: {{custom_color}};
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome!</h1>
+    <div id="boxcontainer">
+        {% for i in range(box_count) %}
+            <div class="box"></div>
+        {% endfor %}
+    </div>
+</body>
+</html>
+

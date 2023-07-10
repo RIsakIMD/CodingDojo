@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play</title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            width: {{50 * width}}px;
+        }
+        .box1, .box2 {
+            width: 50px;
+            height: 50px;
+            margin: 0px auto;
+        }
+        .box1 { background-color: black; }
+        .box2 { background-color: red; }
+    </style>
+</head>
+<body>
+    <h1>Checkerboard</h1>
+    <div class="container">
+        {% for i in range(height) %}
+            {% for j in range(width) %}
+                {% if (j + (i % 2)) % 2 == 0 %}
+                    <div class="box2"></div>
+                {% else %}
+                    <div class="box1"></div>
+                {% endif %}
+            {% endfor %}
+        {% endfor %}
+    </div>
+</body>
+</html>
+
